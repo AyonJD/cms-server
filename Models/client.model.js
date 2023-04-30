@@ -27,6 +27,9 @@ const ClientSchema = new mongoose.Schema({
         enum: ["Active", "Inactive"],
         default: "Inactive"
     },
+    paymentTracker: {
+        type: [Object],
+    },
     serviceStates: {
         type: Object,
         default: {},
