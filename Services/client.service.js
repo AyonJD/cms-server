@@ -99,8 +99,8 @@ exports.updateClient = async function (id, client_data) {
         if (result.nModified === 0) {
             throw new Error("Failed to update service");
         }
-        return result;
-        
+        return client;
+
     } catch (error) {
         throw new Error(error);
     }
