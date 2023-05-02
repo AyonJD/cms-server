@@ -45,43 +45,7 @@ const ClientSchema = new mongoose.Schema({
     currentlyDue: {
         type: Number,
         default: 0
-    },
-    visaPaymentAmount: {
-        type: Number,
-        default: 0
-    },
-    visaPaidAmount: {
-        type: Number,
-        default: 0
-    },
-    visaDueAmount: {
-        type: Number,
-        default: 0
-    },
-    passportPaymentAmount: {
-        type: Number,
-        default: 0
-    },
-    passportPaidAmount: {
-        type: Number,
-        default: 0
-    },
-    passportDueAmount: {
-        type: Number,
-        default: 0
-    },
-    tutorPaymentAmount: {
-        type: Number,
-        default: 0
-    },
-    tutorPaidAmount: {
-        type: Number,
-        default: 0
-    },
-    tutorDueAmount: {
-        type: Number,
-        default: 0
-    },
+    }
 }, { timestamps: true });
 
 const ClientModel = mongoose.model("Client", ClientSchema);

@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'http://localhost:8000';
 const VERSION = '/api/v1'
 const AUTH_URL = `${VERSION}/auth`;
 const SIGNUP_URL = `/signup_user`;
@@ -12,6 +12,7 @@ const GET_ALL_USER = `/get_all_user`;
 const CREATE_CLIENT = `/create_client`
 const GET_ALL_CLIENT = `/get_all_client`
 const GET_CLIENT_BY_ID = `/get_client_by_id/:id`
+const UPDATE_CLIENT_BY_ID = `/update_client_by_id/:id`
 
 // Meeting and feedback Urls
 const SEND_EMAIL_TO_CLIENT = `/send_email_to_client`
@@ -40,6 +41,7 @@ module.exports = {
     CREATE_CLIENT,
     GET_ALL_CLIENT,
     GET_CLIENT_BY_ID,
+    UPDATE_CLIENT_BY_ID,
     SEND_EMAIL_TO_CLIENTS,
     SEND_EMAIL_TO_CLIENT,
     GET_MEETING_BY_ID,

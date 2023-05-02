@@ -32,4 +32,19 @@ module.exports = {
             res.status(400).json({ message: error.message });
         }
     },
+    updateClient: async (req, res) => {
+        try {
+            const id = req.params.id;
+            const client_data = req.body;
+            const result = await ClientServices.updateClient(id, client_data);
+
+            if (!result) {
+                throw new Error("Client not found");
+            }
+
+            res.json({ message: "Client updated successfully", result });
+        } catch (error) {
+            res.status(400).json({ message: error.message });
+        }
+    },
 }
