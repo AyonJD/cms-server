@@ -24,7 +24,7 @@ const UserSchema = new mongoose.Schema({
     role: {
         type: String,
         default: "client",
-        enum: ["admin", "manager", "communication executive", "sales executive", "office eecutive", "accountant", "client"]
+        enum: ["admin", "manager", "communication executive", "sales executive", "office excutive", "accountant", "client"]
     },
 }, { timestamps: true });
 
