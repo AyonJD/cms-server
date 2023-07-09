@@ -1,6 +1,6 @@
 const BASE_URL = 'http://localhost:8000';
-const VERSION = '/api/v1'
-const AUTH_URL = `${VERSION}/auth`;
+const VERSION = `/api/v1`
+const AUTH_URL = `/auth`;
 const SIGNUP_URL = `/signup_user`;
 const LOGIN_URL = `/login_user`;
 
